@@ -9,6 +9,8 @@ repository = ""
 include = [
     
     "pixolve_aiml.py",
+    "pixsolve.py",
+    "test.py",
 ]
 
 [tool.poetry.dependencies]
@@ -41,7 +43,7 @@ pdf2image = "^1.17.0"
 streamlit_drawable_canvas = "^0.9.3"
 
 [tool.poetry.scripts]
-pixsolve = "streamlit run pixolve_aiml.py"
+pixsolve_run = "pixsolve:run_app"
 
 [build-system]
 requires = ["poetry-core"]

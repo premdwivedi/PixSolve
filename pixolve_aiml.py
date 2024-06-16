@@ -16,7 +16,7 @@ import xml.etree.ElementTree as ET
 
 import asyncio
 from openai import AsyncOpenAI
-
+from dotenv import load_dotenv
 import unimernet.tasks as tasks
 from unimernet.common.config import Config
 from unimernet.processors import load_processor
@@ -167,8 +167,10 @@ def convert_latex_to_readable(latex_string):
         latex_string = re.sub(pattern, replacement, latex_string)
     return latex_string
 
+load_dotenv()
+
 client = AsyncOpenAI(
-    api_key="Insert your API key here.",
+    api_key=os.getenv("API_KEY"),
     base_url="https://api.aimlapi.com/v1"
 )
 

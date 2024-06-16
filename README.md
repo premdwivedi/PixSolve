@@ -4,8 +4,11 @@ PixSolve is a cutting-edge framework designed for the recognition and solution o
 # To use this Project
 step 1: Clone the repo
 Srep 2: cd models
+
 #Download the model and tokenizer individually or use git-lfs
+
 git lfs install
+
 git clone https://huggingface.co/wanderkid/unimernet
 
 # Installation 

@@ -17,9 +17,9 @@ import xml.etree.ElementTree as ET
 import asyncio
 from openai import AsyncOpenAI
 from dotenv import load_dotenv
-import unimernet.tasks as tasks
-from unimernet.common.config import Config
-from unimernet.processors import load_processor
+import pixsolve.tasks as tasks
+from pixsolve.common.config import Config
+from pixsolve.processors import load_processor
 
 
 
